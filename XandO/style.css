@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=IBM+Plex+Mono:ital@1&family=Preahvihear&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 60px;
+    background-color: cornflowerblue;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    padding-left: 10px;
+    font-size: 23px;
+}
+
+.gameContainer{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gameInfo{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgb(251, 212, 139);
+}
+
+.img img{
+    width: 5em;
+    display: none;
+    transition: display 1s ease-in-out;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.Info{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#reset{
+    margin-left: 1em;
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 10px;
+    background: #CFD8DC;
+    color: #503737;
+    font-family: 'Preahvihear', sans-serif;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 780px) {
+    .gameContainer{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #ulTitle{
+        width: 100%;
+    }
+
+    #Title{
+        text-align: center;
+        
+    }
+
+    .gameInfo{
+        margin-top: 2rem;
+    }
+
+    .gameInfo h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
